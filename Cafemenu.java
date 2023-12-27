@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 public class Cafemenu {
     public static void main(String[] args) {
-        try {
             menulist drink1 = new menulist("hot coffee", "hot", 300);
             menulist drink2 = new menulist("ice coffee", "cold", 300);
             menulist drink3 = new menulist("special coffee", "hot", 500);
@@ -15,6 +14,7 @@ public class Cafemenu {
 
             boolean foundMenu = false;
 
+        try {
             for (menulist menulist : menulists) {
                 if (menulist.gettemperture().equals("hot")) {
                     System.out.println("^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-^");
